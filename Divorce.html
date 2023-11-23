@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .navbar{
+        margin-top: -17px;
+    }
+    .navbar a{
+        color: white;
+    }
+    
+    *{
+        margin: 0px;
+    }
+    .nav-link a{
+        color: white;
+
+
+    }
+    .dropdown-toggle{
+        color: white;
+        margin-left: 20px;
+        
+    }
+    .last{
+        margin-top: -100px;
+    }
+    .collapse{
+        background-color: #10101143;
+        width: 100%;
+        color: white;
+        position: absolute;
+        margin-top: 80px; 
+    }
+    .co{
+        color: white;
+    }
+    .nav-item{
+        margin-left: 20px;
+        width: 100%;
+        color: white;
+    }
+    .navbar-brand{
+        margin-right: 20px;
+        
+    }
+    .nav-link{
+        color: white;
+    }
+    .do{
+        color: white;
+        margin-top: -600px;
+        
+    }
+    .do h1{
+        width: 650px;
+        margin-left: 80px;
+        font-size: 60px;
+    }
+    .do h2{
+        width: 750px;
+        margin-left: 80px;
+        font-size: 32px;
+        margin-top: 50px;
+    }
+    .start1{
+        font-size: 15px;
+        padding: 15px;
+        width: 270px;
+        background-color: #EA8143;
+        border: white;
+        color: white;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .start2{
+        margin-left: 80px;
+        color: white;
+        
+    }
+    .start5{
+        font-size: 15px;
+        padding: 15px;
+        width: 270px;
+        background-color:rgb(0,0 ,0,0.5);
+        border-color: #EA8143;
+        color: white;
+        margin-left: 80px;
+        margin-top: 10px;
+
+    }
+    .start5:hover{
+        background-color: #EA8143;
+
+    }
+    .lau{
+        width: 350px;
+        color: white;
+        margin-top: 70px;
+        margin-left: 500px;
+        font-size: 17px;
+    }
+    .lau a{
+        /* color: white;
+       text-decoration: none; */
+    }
+    .more{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .more h1{
+        font-size: 35px;
+    }
+    .more p{
+        width: 88%;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .card img{
+        width: 100px;
+        margin-top: 20px;
+    }
+    .card-deck{
+        margin-top: 120px;
+        width: 85%;
+        margin-left: 100px;
+    }
+    .btn{
+        margin-top: 55px;
+        width: 350px;
+        padding: 12px;
+    }
+    .start8{
+        margin-left: 120px;
+        color: white;
+        
+    }
+    .card h5{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .card p{
+        font-size: 18px;
+    }
+    .btn1{
+        margin-top: 25px;
+        width: 350px;
+        padding: 15px;
+    }
+    .btn2{
+        margin-top: 60px;
+        width: 350px;
+        padding: 15px;
+    }
+    .here{
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 80px;
+    }
+    .love{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+    }
+    .love1{
+        width: 300px;
+    }
+    .love1 p{
+        margin-top: 20px;
+    }
+    .here1{
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 120px;
+    }
+    .you1{
+        display: flex;
+        width: 700px;
+        margin-left: ;
+       
+    }
+    .you{
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 80px;
+    }
+    .you1 p{
+        margin-left: 30px;
+
+        
+    }
+    
+    .you2{
+        display: flex;
+        width: 700px;
+        margin-left: 50px;
+       
+    }
+    .you2 p{
+        margin-left: 30px;
+    }
+    .here3{
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 180px;
+    }
+    .com{
+        display: flex;
+        justify-content: space-between;
+        background-color: #EA8143;
+        padding: 70px;
+    }
+    .com h1{
+        width: 950px;
+        color: white;
+        font-size: 38px;
+       margin-left: -45px;
+    }
+    .start10{
+        font-size: 15px;
+        padding: 15px;
+        width: 270px;
+        background-color: #EA8143;
+        border-color: rgb(246, 235, 235);
+        color: white;
+        margin-right: -40px;
+        
+    }
+    .for{
+        margin-top: 80px;
+        width: 80%;
+    }
+    .for h1{
+        font-size: 60px;
+        margin-left: 15px;
+    }
+    .for p{
+        font-size: 28px;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    .me{
+        margin-top: 90px;
+        margin-left: 70px;
+    }
+    .div{
+        color: white;
+    }
+    .us{
+        margin-top: 100px;
+    }
+    .us4{
+        margin-top: -20px;
+
+    }
+    .us7{
+        margin-top: -20px;
+
+    }
+    .add{
+        display: flex;
+        margin-top: 100px;
+    }
+    .add a{
+        color: black;
+    }
+    .add-inner{
+        margin-left: 20px;
+    }
+    .add1{
+        display: flex;
+        margin-left: 400px;
+        margin-right: 100px;
+        
+       
+
+    }
+
+    .add2{
+        margin-left: 80px;
+       
+    }
+    .add3{
+        margin-left: 80px;
+        
+    }
+    .add4{
+        margin-left: 80px;
+       
+    }
+    .add5{
+        margin-left: 80px;
+       
+    }
+    .add8{
+        margin-top: -150px;
+        display: flex;
+        margin-left: 750px;
+       
+        
+        
+    }
+    
+    .add10{
+        margin-left: 100PX;
+        
+
+    }
+    .make{
+        margin-left: 750px;
+        margin-top: 50px;
+    }
+    .make h5{
+        margin-bottom: 50px;
+        border-bottom: dashed 1px;
+    }
+    .all{
+        display: flex;
+        margin-top: 100px;
+        background-color: #2F4E6B;
+        padding: 10px;
+        color: white;
+    }
+    .all a{
+        color: white;
+    }
+    .all1{
+        margin-left: 400px;
+    }
+    .all2{
+        margin-left: 100px;
+    }
+    .all3{
+        margin-left: 10px;
+    }
+
+    .opt{
+        display: flex;
+        margin-left: 50px;
+        margin-top: -80px;
+
+    }
+    .offer{
+        margin-left: 120px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+    }
+    .offer p{
+        font-size: 15px;
+    
+    }
+    /* .vahid{
+        height: 50px;
+        width: 220px;
+    } */
+
+    .dropdown-menu{
+        background-color: black;
+    }
+
+
+
+
+</style>
+
+<body>
+
+    <!-- <div>
+        <img class="vahid" src="https://images-platform.99static.com/dAmowtF19w748PDOANlwr3425Gc=/1x0:997x996/500x500/top/smart/99designs-contests-attachments/64/64343/attachment_64343115" alt="">
+    </div> -->
+    <div class="co">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#"><img src="https://divorce.com/static/multisite/img/multisite/divorcecom/divorcecom-white-logo-new.557b300d0ef1.svg" height="50px" width="220px" alt=""></a>
+  
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Divorce Services   
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Our Philosophy   
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Help Center   
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Account<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+            1.888.334.0710
+            <span class="sr-only">(current)</span></a>
+        </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+
+
+<div>
+    <div class="last">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/lw-service/laura-landing-video-placeholder.53883ff8f003.webp" width="100%" height="800px" alt="">
+    </div>
+    <div class="do">
+        <h1>Don’t make this harder than it needs to be.</h1>
+        <h2>Reduce time, cost, and conflict. Learn about divorce online with Divorce.com
+        </h2>
+    </div>
+</div>
+
+
+
+<div class="start">
+    <a href=""> <button  class="start1">Start filling Now <i class="fa-sharp fa-solid fa-arrow-right start2"></i></button></a>
+   
+
+</div>
+<div class="start">
+    <a href=""><button class="start5">Learn About Divorce  <i class="fa-sharp fa-solid fa-arrow-right start2"></i> </button></a>
+</div>
+
+<div class="lau">
+    <p>Laura Wasser | Celebrity divorce attorney
+    <a href="">leading online divorce</a> at Divorce.com</p>
+</div>
+
+<div>
+    <div class="more">
+        <h1>More than One Million People Decided to Make Divorce Easier</h1>
+        <p>A messy divorce has real costs. Hiding beneath the financial burden is emotional suffering. And guess what? A low-conflict online divorce often has the same financial result as a messy battle suffered by you and your children.</p>
+    </div>
+</div>
+
+
+
+
+<div class="card-deck">
+    <div class="card">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/fa-icons/file-contract-orange.f03033422c39.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Basic Divorce</h5>
+          <p class="card-text">Are you in agreement on how to divide your assets? That's great! Start a low-conflict divorce online. Use our simple questionnaire to generate your forms. </p>
+          <a href="#" class="btn btn-primary">Tell Me More <i class="fa-sharp fa-solid fa-arrow-right start8"></i></a>
+    
+      </div>
+      
+    </div>
+    <div class="card">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/fa-icons/users-orange.ace1f4db39ca.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Divorce + Kids</h5>
+          <p class="card-text">Kids can add complexity to a divorce, with custody and child support questions. Check out our tools for more advanced divorce issues.</p>
+          <a href="#" class="btn btn1 btn-primary">Tell Me More <i class="fa-sharp fa-solid fa-arrow-right start8"></i></a>
+      </div>
+      
+    </div>
+    <div class="card">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/fa-icons/folder-heart-orange.8b2f0fb1ca91.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Divorce + Attorney Advice</h5>
+          <p class="card-text">Professional advice can help make sure you do it right. That’s especially true if you are not in agreement with your spouse. Find an independent attorney, licensed in your state.</p>
+          <a href="#" class="btn btn2 btn-primary">Tell Me More <i class="fa-sharp fa-solid fa-arrow-right start8"></i></a>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <div>
+    <div class="here">
+        <h1>Here’s What Our Customers Have to Say</h1>
+    </div>
+  </div>
+
+  <div class="love">
+
+    <div class="love1">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/star-orange.967f08725e11.svg" alt="">
+        <p>I love how easy this was to file for a dissolution of marriage between my ex husband and me</p>
+        <p>Tiffany C., Ohio</p>
+    </div>
+    <div class="love1">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/star-orange.967f08725e11.svg" alt="">
+        <p>The forms are very clear and easy to understand, and customer support was very friendly and helpful.</p>
+        <p>Loria R.,Georgia</p>
+    </div>
+    <div class="love1">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/icons/star-orange.967f08725e11.svg" alt="">
+        <p>It was easy and straightforward, and I would recommend online divorce service to anyone.</p>
+        <p>Marsha M., Florida</p>
+    </div>
+
+  </div>
+
+  <div class="here1">
+    <h1>In the News: Laura Wasser of Divorce.com</h1>
+  </div>
+
+  <div class="you">
+    <div class="you1">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/lw-service/in-the-news/Laura-news-vogue.6fe2c960366d.jpg" alt="">
+        <div >
+            <p>Vogue | February 2021</p>
+            <p>Everything you need to know about Kim Kardashian’s divorce attorney</p>
+        </div>
+    </div>
+        <div class="you2">
+            <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/lw-service/in-the-news/Laura-news-today.05a736ed4cb6.jpg" alt="">
+            <div>
+                <p>Today | April 2022</p>
+                <p>Kim Kardashian’s divorce lawyer Laura Wasser calls out Kanye West’s online behavior</p>
+            </div>
+        </div>
+  </div>
+
+  <div class="you">
+    <div class="you1">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/lw-service/in-the-news/Laura-news-NYt.1a96f8dd374a.jpg" alt="">
+        <div >
+            <p>Vogue | February 2021</p>
+            <p>Everything you need to know about Kim Kardashian’s divorce attorney</p>
+        </div>
+    </div>
+        <div class="you2">
+            <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/lw-service/in-the-news/Laura-news-eonline.bd5a9802cbcd.jpg" alt="">
+            <div>
+                <p>Today | April 2022</p>
+                <p>Kim Kardashian’s divorce lawyer Laura Wasser calls out Kanye West’s online behavior</p>
+            </div>
+        </div>
+  </div>
+
+
+  <div class="here3">
+    <h1>The divorce (r)evolution will not be televised—it’ll be online</h1>
+  </div>
+
+
+  <div class="offer">
+    <video autoplay muted loop  src="https://knight-bite.com/res/franchise/franchise_playback.mp4 " class="auto"></video>
+    <p>Watch: Chief of Divorce Evolution Laura Wasser on how Divorce.com is changing the game.</p>
+  </div>
+
+
+  <div class="com">
+    <div>
+        <h1>Divorce.com offers online divorce solutions in all 50 states + Canada.</h1>
+    </div>
+    <div class="start">
+        <a href=""> <button  class="start10">Start filling Now <i class="fa-sharp fa-solid fa-arrow-right start2"></i></button></a>
+       
+    
+    </div>
+  </div>
+
+  <div class="for">
+    <h1>Recognition for our team’s work improving and advancing online divorce solutions:</h1>
+    <p>We thank these news organizations for recognition of the Divorce.com team.</p>
+  </div>
+
+  <div>
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/abc.3ed3f7a07dfd.png" alt="">
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/gma.4fb93f223a55.png" alt="">
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/usa_today.1cf96013cc63.png" alt="">
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/nbc.e4370b5a5cac.png" alt="">
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/time.2bcd76d4d1fe.png" alt="">
+    <img class="me" src="https://divorce.com/static/multisite/img/multisite/divorcecom/bg/home-exp/cbs.aaf14649a53d.png" alt="">
+  </div>
+
+  <div class="add">
+    <div class="add-inner">
+        <img src="https://divorce.com/static/multisite/img/multisite/divorcecom/divorcecom-logo.f5b2edbb2643.svg" height="50px" width="220px" class="div" alt="">
+        <h5 class="us">Contact Us</h5>
+        <p class="us1"><a href="">Get in touch</a></p>
+        <h5 class="us2">Address</h5>
+        <p class="us3">Divorce.com LLC, 2018 156th Ave NE</p>
+        <p class="us4">Bellevue, WA 98007</p>
+        <h5 class="us5">Phone</h5>
+        <p class="us6"><a href="">Call us on 1.888.334.0710</a></p>
+        <p class="us7">Toll Free Monday - Friday 10am - 8pm EST</p>
+        <h5 class="us8">Website</h5>
+        <p class="us9">Divorce.com</p>
+    </div>
+
+    <div class="add1">
+        <div class="add2">
+        <h6>Divorce Services</h6><br>
+        <a href="">Begin your divorce online</a><br>
+        <a href=""> On-demand mediation</a><br>
+        <a href="">Attorney assistance</a><br>
+        <a href="">Prenuptial agreements</a><br>
+        <a href="">Custom offers and divorce tools</a><br>
+    </div>
+
+    <div class="add3">
+        <h6>Our Philosophy</h6><br>
+        <a href="">Laura's vision</a><br>
+        <a href="">Why it works</a><br>
+        <a href="">What you'll save</a><br>
+        <a href="">Why Divorce.com?</a><br>
+        <a href="">Is it right for me?</a><br>
+        <a href="">Our blog</a><br>
+        <a href="">Press page</a><br>
+
+    </div>
+
+    <div class="add4">
+        <h6>Help Center</h6><br>
+        <a href="">FAQs</a><br>
+        <a href="">Reach out</a><br>
+        <a href="">Request a callback</a><br>
+        <a href="">Legal questions</a><br>
+        <a href="">Attorneys in your area</a><br>
+        
+    </div>
+    
+    <div class="add4">
+        <h6>Account</h6><br>
+        <a href="">Sign in</a><br>
+    </div>
+</div>
+
+
+  </div>
+  <div>
+    <div>
+        <div class="add8">
+    <div class="9">
+        <h6>Laura’s Vision</h6>
+        <p>The Divorce (R)evolution Will Not Be Televised—It’ll
+            Be Online <a href="">Read more</a></p>
+    </div>
+    <div class="add10">
+        <h6>About Divorce.com</h6>
+        <p>Our full-spectrum online divorce platform provides simpler, faster, more peaceful options—empowering our customers to chart their own destinies and seek modern solutions that avoid the pitfalls of an outdated system. <a href=""> Read more</a></p>
+    </div>
+</div>
+    </div>
+  </div>
+
+
+
+  <div class="make">
+    <h5>Make positive change happen™</h5>
+    <p>*Your purchase gives you 30 days access to our platform. After the 30-days, the service will renew and your card will automatically be charged $39.99 monthly. When you no longer need our service, cancel renewals in your <a href="">Account</a>.</p>
+</div>
+<div class="make">
+    <h6>Disclaimer</h6>
+   <p>We are not a law firm or a substitute for an attorney or law firm. Divorce.com does not sell blank forms. Communications between you and Divorce.com are governed by our <a href="">Privacy Policy,</a> but are not covered by the attorney-client privilege. Your access to Divorce.com is subject to and governed by our <a href="">Terms of Use.</a></p> 
+   <p>Attorneys advertised on this site are independent attorneys. <a href="">See the attorney</a> in your area who's responsible for this advertisement. Divorce.com, LLC is not an "attorney referral service" or a law firm. The information you provide to Divorce.com, LLC is not protected by attorney-client privilege. <a href="">Get more information</a> about this advertisement if you live in Alabama, Missouri, or New York.</p>
+</div>
+
+
+<div class="opt">
+    <div class="opt1">
+        <img src="https://lirp.cdn-website.com/7dbfeeea/dms3rep/multi/opt/secure-trust-logo-640w.png" height="50px" width="120px" alt="">
+    </div>
+    <div class="opt1">
+        <img src="https://fact.technology/files/2022/03/trustedsite-1.png" height="50px" width="120px" alt="">
+    </div>
+    <div>
+        <img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-42-bbb-1000125778.png" height="50px" width="220px" alt="">
+    </div>
+</div>
+
+
+<div class="all">
+    <div>
+        <p>All Rights Reserved.</p>
+    </div>
+    <div class="all1">
+        <p>© 2022 Divorce.com LLC</p>
+
+    </div>
+    <div class="all2">
+        <a class="all3" href="">Terms Of Use</a>
+        <a class="all3" href="">Privacy Policy</a>
+        <a class="all3" href="">Terms of Service</a>
+        <a class="all3" href="">Sample Documents By State </a>
+        <a class="all3" href=""> Do Not Sell</a>
+    </div>
+</div>
+
+ 
+
+
+
+
+
+
+        </div>
+      </div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
